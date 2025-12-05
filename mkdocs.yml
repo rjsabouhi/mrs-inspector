@@ -5,7 +5,10 @@ repo_url: https://github.com/rjsabouhi/mrs-inspector
 
 theme:
   name: material
-
+  pallette:
+  - scheme: default
+    primary: deep purple
+    accent: deep purple
 
 nav:
   - Home: index.md
