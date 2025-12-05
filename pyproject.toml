@@ -1,18 +1,13 @@
-[build-system]
-requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "mrs-inspector"
-version = "0.1.1"
-description = "A structural reasoning inspector for modular reasoning systems (MRS). Provides tracing, phases, exception capture, and graph visualization."
+name = "mrs_inspector"
+version = "1.0.0"
+description = "A lightweight tracing and reasoning-structure capture utility."
 readme = "README.md"
 requires-python = ">=3.9"
-license = { file = "LICENSE" }
-
 authors = [
-    {name = "RJ Sabouhi", email = "symbolicsuite@gmail.com"}
+    { name = "RJ Sabouhi", email = "rjsabouhi@gmail.com" }
 ]
+keywords = ["tracing", "inspection", "debugging", "reasoning", "analysis"]
 
 
 dependencies = [
@@ -20,15 +15,17 @@ dependencies = [
     "matplotlib>=3.5",
 ]
 
-classifiers = [
-    "Programming Language :: Python :: >=3.9",
-    "License :: OSI Approved :: Apache Software License",
-    "Operating System :: OS Independent",
-]
+
+[project.urls]
+"Homepage" = "https://rjsabouhi.github.io/mrs-inspector/"
+"Documentation" = "https://rjsabouhi.github.io/mrs-inspector/"
+"Repository" = "https://github.com/rjsabouhi/mrs-inspector"
+
 
 [tool.setuptools]
-package-dir = {"" = "."}
+package-dir = { "" = "." }
 packages = ["mrs_inspector"]
+
 
 [tool.setuptools.package-data]
 mrs_inspector = ["*.json", "*.png"]
