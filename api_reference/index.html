@@ -31,9 +31,6 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
-      
       
 
 
@@ -60,12 +57,7 @@
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-purple">
+    <body dir="ltr">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -86,7 +78,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="MRS Inspector" class="md-header__button md-logo" aria-label="MRS Inspector" data-md-component="logo">
       
@@ -115,8 +109,8 @@
       </div>
     </div>
     
-      
     
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -168,7 +162,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    rjsabouhi/mrs-inspector
+    GitHub
   </div>
 </a>
       </div>
@@ -181,113 +175,6 @@
       
       
         
-          
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
-  
-  
-    
-  
-  Home
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../installation/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Installation
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../usage/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Usage
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-  
-    
-  
-  API Reference
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../basic_trace/" class="md-tabs__link">
-          
-  
-  
-  Examples
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
-</nav>
           
         
       
@@ -302,12 +189,8 @@
                     
 
 
-  
 
-
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="MRS Inspector" class="md-nav__button md-logo" aria-label="MRS Inspector" data-md-component="logo">
       
@@ -325,7 +208,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    rjsabouhi/mrs-inspector
+    GitHub
   </div>
 </a>
     </div>
@@ -664,11 +547,6 @@
     
     
     
-      
-      
-        
-      
-    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -804,6 +682,199 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inspector
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inspector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inspectfn-args-kwargs-result-trace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        inspect(fn, *args, kwargs) → (result, Trace)**
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decorator-inspectorwrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decorator: @inspector.wrap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trace-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trace Object
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Trace Object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tracesavepath-str" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        trace.save(path: str)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphbuilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GraphBuilder
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GraphBuilder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graphbuilderbuildtrace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GraphBuilder().build(trace)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphbuildersave_pngpath-str" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GraphBuilder().save_png(path: str)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exceptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mrs_inspectorstate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mrs_inspector.state
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mrs_inspectortrace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mrs_inspector.trace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mrs_inspectorgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mrs_inspector.graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -817,21 +888,19 @@
   
 
 
-<h1 id="api-reference">API Reference<a class="headerlink" href="#api-reference" title="Permanent link">&para;</a></h1>
+<h1 id="api-reference">API Reference</h1>
 <p>This document provides the complete public API for <strong>MRS-Inspector</strong>.</p>
 <hr />
-<h2 id="inspector">Inspector<a class="headerlink" href="#inspector" title="Permanent link">&para;</a></h2>
+<h2 id="inspector">Inspector</h2>
 <p>The core entry point for tracing execution.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mrs_inspector</span><span class="w"> </span><span class="kn">import</span> <span class="n">Inspector</span>
+<pre><code class="language-python">from mrs_inspector import Inspector
 
-<span class="n">inspector</span> <span class="o">=</span> <span class="n">Inspector</span><span class="p">()</span>
-</code></pre></div>
-
-<h3 id="inspectfn-args-kwargs-result-trace"><strong>inspect(fn, *args, </strong>kwargs) → (result, Trace)**<a class="headerlink" href="#inspectfn-args-kwargs-result-trace" title="Permanent link">&para;</a></h3>
+inspector = Inspector()
+</code></pre>
+<h3 id="inspectfn-args-kwargs-result-trace"><strong>inspect(fn, *args, </strong>kwargs) → (result, Trace)**</h3>
 <p>Executes the function while recording a full reasoning trace.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">result</span><span class="p">,</span> <span class="n">trace</span> <span class="o">=</span> <span class="n">inspector</span><span class="o">.</span><span class="n">inspect</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</code></pre></div>
-
+<pre><code class="language-python">result, trace = inspector.inspect(fn, *args, **kwargs)
+</code></pre>
 <p>Captures:</p>
 <ul>
 <li>function entry/exit  </li>
@@ -841,41 +910,37 @@
 <li>exceptions (if thrown)  </li>
 </ul>
 <hr />
-<h2 id="decorator-inspectorwrap">Decorator: <code>@inspector.wrap</code><a class="headerlink" href="#decorator-inspectorwrap" title="Permanent link">&para;</a></h2>
+<h2 id="decorator-inspectorwrap">Decorator: <code>@inspector.wrap</code></h2>
 <p>Wraps a function so every call is automatically traced.</p>
-<div class="codehilite"><pre><span></span><code><span class="nd">@inspector</span><span class="o">.</span><span class="n">wrap</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">step</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
-</code></pre></div>
-
+<pre><code class="language-python">@inspector.wrap
+def step(x):
+    return x * 2
+</code></pre>
 <p>Works for deeply nested calls and pipelines.</p>
 <hr />
-<h2 id="trace-object">Trace Object<a class="headerlink" href="#trace-object" title="Permanent link">&para;</a></h2>
+<h2 id="trace-object">Trace Object</h2>
 <p><code>Trace</code> represents the full execution history.</p>
-<h3 id="tracesavepath-str"><strong>trace.save(path: str)</strong><a class="headerlink" href="#tracesavepath-str" title="Permanent link">&para;</a></h3>
+<h3 id="tracesavepath-str"><strong>trace.save(path: str)</strong></h3>
 <p>Exports the trace to JSON.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">trace</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;trace.json&quot;</span><span class="p">)</span>
-</code></pre></div>
-
+<pre><code class="language-python">trace.save(&quot;trace.json&quot;)
+</code></pre>
 <p>Output includes call tree, steps, timing, and exception details.</p>
 <hr />
-<h2 id="graphbuilder">GraphBuilder<a class="headerlink" href="#graphbuilder" title="Permanent link">&para;</a></h2>
+<h2 id="graphbuilder">GraphBuilder</h2>
 <p>Optional utility to turn a trace into a PNG call graph.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mrs_inspector.graph</span><span class="w"> </span><span class="kn">import</span> <span class="n">GraphBuilder</span>
-</code></pre></div>
-
-<h3 id="graphbuilderbuildtrace"><strong>GraphBuilder().build(trace)</strong><a class="headerlink" href="#graphbuilderbuildtrace" title="Permanent link">&para;</a></h3>
+<pre><code class="language-python">from mrs_inspector.graph import GraphBuilder
+</code></pre>
+<h3 id="graphbuilderbuildtrace"><strong>GraphBuilder().build(trace)</strong></h3>
 <p>Converts a trace into a directed graph structure.</p>
-<h3 id="graphbuildersave_pngpath-str"><strong>GraphBuilder().save_png(path: str)</strong><a class="headerlink" href="#graphbuildersave_pngpath-str" title="Permanent link">&para;</a></h3>
+<h3 id="graphbuildersave_pngpath-str"><strong>GraphBuilder().save_png(path: str)</strong></h3>
 <p>Renders the graph to an image file.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">gb</span> <span class="o">=</span> <span class="n">GraphBuilder</span><span class="p">()</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">gb</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">trace</span><span class="p">)</span>
-<span class="n">gb</span><span class="o">.</span><span class="n">save_png</span><span class="p">(</span><span class="s2">&quot;graph.png&quot;</span><span class="p">)</span>
-</code></pre></div>
-
+<pre><code class="language-python">gb = GraphBuilder()
+g = gb.build(trace)
+gb.save_png(&quot;graph.png&quot;)
+</code></pre>
 <p>Uses <code>networkx</code> and <code>matplotlib</code> under the hood.</p>
 <hr />
-<h2 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permanent link">&para;</a></h2>
+<h2 id="exceptions">Exceptions</h2>
 <p>All exceptions raised during execution are captured and stored in the trace:</p>
 <ul>
 <li>exception type  </li>
@@ -884,12 +949,12 @@
 </ul>
 <p>They never crash tracing unless explicitly re-raised by user code.</p>
 <hr />
-<h2 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h2>
-<h3 id="mrs_inspectorstate"><code>mrs_inspector.state</code><a class="headerlink" href="#mrs_inspectorstate" title="Permanent link">&para;</a></h3>
+<h2 id="modules">Modules</h2>
+<h3 id="mrs_inspectorstate"><code>mrs_inspector.state</code></h3>
 <p>Internal state container for function call records.</p>
-<h3 id="mrs_inspectortrace"><code>mrs_inspector.trace</code><a class="headerlink" href="#mrs_inspectortrace" title="Permanent link">&para;</a></h3>
+<h3 id="mrs_inspectortrace"><code>mrs_inspector.trace</code></h3>
 <p>Implements the <code>Trace</code> class and JSON export.</p>
-<h3 id="mrs_inspectorgraph"><code>mrs_inspector.graph</code><a class="headerlink" href="#mrs_inspectorgraph" title="Permanent link">&para;</a></h3>
+<h3 id="mrs_inspectorgraph"><code>mrs_inspector.graph</code></h3>
 <p>GraphBuilder and visualization helpers.</p>
 <hr />
 <p>End of API specification.</p>
@@ -912,12 +977,6 @@
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Back to top
-</button>
         
       </main>
       
@@ -948,7 +1007,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "content.code.copy", "header.autohide"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
