@@ -12,25 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from mrs_inspector.state import State
+from mrs_inspector import Inspector
+from mrs_inspector.validator import validate_trace
+import json
 
-def test_state_creation():
-    s = State(
-        id="123",
-        module_name="test",
-        phase="call",
-        inputs={"x": 1},
-        outputs=None,
-        parent_id=None,
-        depth=0,
-        timestamp="2025-01-01T00:00:00",
-        exception=None,
-    )
+if __name__ == "__main__":
+    inspector = Inspector()
 
-    assert s.id == "123"
-    assert s.module_name == "test"
-    assert s.phase == "call"
-    assert s.inputs == {"x": 1}
-    assert s.outputs is None
-    assert s.exception is None
+    def demo():
+        return 42
 
+    result, trace = inspector.inspect(demo)
+
+    validate_trace(trace.states)
+    print("Validation passed!")

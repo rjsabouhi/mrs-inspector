@@ -1,0 +1,35 @@
+[
+    {
+        "id": "59227cf8-5f9a-4303-ac62-3aa32310869f",
+        "module_name": "main",
+        "phase": "root",
+        "content": null,
+        "inputs": {},
+        "outputs": null,
+        "depth": 0,
+        "parent_id": null,
+        "exception": null,
+        "timestamp": "2025-12-05T08:14:55.050459"
+    },
+    {
+        "id": "b64fdd30-9f9e-4beb-a91f-9aff8cf004b4",
+        "module_name": "explode",
+        "phase": "call",
+        "content": null,
+        "inputs": {
+            "args": [
+                0
+            ],
+            "kwargs": {}
+        },
+        "outputs": null,
+        "depth": 1,
+        "parent_id": "59227cf8-5f9a-4303-ac62-3aa32310869f",
+        "exception": {
+            "type": "ZeroDivisionError",
+            "message": "division by zero",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\rjsab\\mrs-inspector\\mrs_inspector\\inspector.py\", line 85, in wrapped_fn\n    result = fn(*args, **kwargs)\n  File \"C:\\Users\\rjsab\\mrs-inspector\\examples\\test_exception.py\", line 7, in explode\n    return 10 / x   # will cause ZeroDivisionError when x = 0\n           ~~~^~~\nZeroDivisionError: division by zero\n"
+        },
+        "timestamp": "2025-12-05T08:14:55.050484"
+    }
+]

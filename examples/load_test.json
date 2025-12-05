@@ -1,0 +1,14 @@
+[
+    {
+        "id": "b3924468-ba0d-4c7b-9344-a05264a74ef8",
+        "module_name": "compute",
+        "phase": "root",
+        "content": null,
+        "inputs": {},
+        "outputs": 42,
+        "depth": 0,
+        "parent_id": null,
+        "exception": null,
+        "timestamp": "2025-12-05T08:21:28.086971"
+    }
+]

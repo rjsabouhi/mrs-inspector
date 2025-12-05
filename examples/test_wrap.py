@@ -12,25 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from mrs_inspector.state import State
+from mrs_inspector import Inspector
 
-def test_state_creation():
-    s = State(
-        id="123",
-        module_name="test",
-        phase="call",
-        inputs={"x": 1},
-        outputs=None,
-        parent_id=None,
-        depth=0,
-        timestamp="2025-01-01T00:00:00",
-        exception=None,
-    )
+inspector = Inspector()
 
-    assert s.id == "123"
-    assert s.module_name == "test"
-    assert s.phase == "call"
-    assert s.inputs == {"x": 1}
-    assert s.outputs is None
-    assert s.exception is None
+@inspector.wrap
+def child(x):
+    with inspector.phase("squared"):
+        return x * x
 
+@inspector.wrap
+def parent():
+    with inspector.phase("setup"):
+        a = child(3)
+    return a + 1
+
+if __name__ == "__main__":
+    result, trace = inspector.inspect(parent)
+    trace.save("examples/wrapped_trace.json")
+    print("OK")

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "c5c5b340-7b3b-45d4-8998-d2e9feb1ea16",
+    "module_name": "root",
+    "phase": "expand",
+    "content": "begin",
+    "inputs": {},
+    "outputs": {
+      "done": true
+    },
+    "depth": 0,
+    "parent_id": null,
+    "timestamp": "2025-12-05T07:26:21.766099"
+  },
+  {
+    "id": "af2e5592-051e-4aee-9484-831f23653e34",
+    "module_name": "child",
+    "phase": "verify",
+    "content": "checking stuff",
+    "inputs": {},
+    "outputs": {
+      "verified": true
+    },
+    "depth": 1,
+    "parent_id": "c5c5b340-7b3b-45d4-8998-d2e9feb1ea16",
+    "timestamp": "2025-12-05T07:26:21.766125"
+  },
+  {
+    "id": "c468d374-f039-4982-a2f5-409f0b63dc03",
+    "module_name": "flat-event",
+    "phase": "commit",
+    "content": "finalizing",
+    "inputs": {},
+    "outputs": {},
+    "depth": 0,
+    "parent_id": null,
+    "timestamp": "2025-12-05T07:26:21.766147"
+  }
+]
