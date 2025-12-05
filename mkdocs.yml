@@ -1,0 +1,19 @@
+site_name: MRS Inspector
+site_url: https://rjsabouhi.github.io/mrs-inspector/
+repo_url: https://github.com/rjsabouhi/mrs-inspector
+
+
+theme:
+  name: material
+
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - API Reference: api_reference.md
+  - Examples:
+      - Basic Trace: basic_trace.md
+      - Graph Output: graph_output.md
+      - Custom Modules: custom_modules.md
+

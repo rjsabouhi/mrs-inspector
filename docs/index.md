@@ -1,14 +1,15 @@
-# **1. mrs-inspector
+# MRS-Inspector
 
-Modular Reasoning Scaffold — Inspector
+**Structured Reasoning Trace Engine for the Modular Reasoning Scaffold (MRS).**
 
-A minimal reasoning trace and module-state capture utility.
+MRS-Inspector provides:
 
-This package provides:
+- Step-by-step execution tracing  
+- Nested call inspection  
+- Phase and exception capture  
+- JSON trace export  
+- Optional graph visualization
 
-- state logging
-- transition capture
-- JSON trace export
-- optional graph construction
+It is a lightweight, minimal dependency library meant to make reasoning processes visible, debuggable, and analyzable.
 
-See `installation.md` and `usage.md` for examples.
+---

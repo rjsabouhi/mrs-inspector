@@ -1,9 +1,9 @@
 # MRS-Inspector v1.0 — Structured Reasoning Trace Engine
-*A companion module to the Modular Recursion Scaffold (MRS), providing full visibility into reasoning steps, execution flow, and exceptions.*
+*A companion module to the Modular Reasoning Scaffold (MRS), providing full visibility into reasoning steps, execution flow, and exceptions.*
 
 ## Overview
 MRS-Inspector records *every step* of a function’s execution — calls, nested calls, phases, inputs, outputs, and exceptions — into a structured trace object.  
-It is designed to work alongside **Modular Recursion Scaffold (MRS)** as its interpretability and debugging layer.
+It is designed to work alongside **Modular Reasoning Scaffold (MRS)** as its interpretability and debugging layer.
 
 Where MRS provides **structure**,  
 MRS-Inspector provides **visibility**.
